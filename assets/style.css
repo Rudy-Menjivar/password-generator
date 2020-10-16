@@ -112,6 +112,13 @@ header {
   width: 50%;
 }
 
+.close:hover,
+.close:focus {
+  color: rgb(175, 2, 2)143, 27, 27);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
