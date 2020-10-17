@@ -4,6 +4,7 @@ var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "01234567890123456789";
 var symbols = "!#$%&'()*+,-./:;<=>?@[]\^_`{|}~";
 
+// Declared variables with input ids
 var lowercaseIs = document.getElementById('lowercase');
 var uppercaseIs = document.getElementById('uppercase');
 var numberIs = document.getElementById('numbers');
@@ -46,7 +47,10 @@ output.innerHTML = slider.value; // Display the default slider value
 // Update the slider value as it's moved
 slider.oninput = function() {
   output.innerHTML = this.value;
-} 
+}
+
+// Variable linked with final button id
+var genPass = document.getElementById('genPass');
 
 // Add event listener to generate button, then writePassword
 generateBtn.addEventListener("click", writePassword);
