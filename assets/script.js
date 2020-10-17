@@ -33,6 +33,10 @@ window.onclick = function(event) {
   }
 }
 
+var slider = document.getElementById("passwordLength");
+var output = document.getElementById("lengthValue");
+output.innerHTML = slider.value; // Display the default slider value
+
 // Add event listener to generate button, then writePassword
 generateBtn.addEventListener("click", writePassword);
 
