@@ -12,7 +12,17 @@ var symbolIs = document.getElementById('symbols');
 var passwordLength = document.getElementById('passwordLength');
 
 // Assignment Code for button
-var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#genPass");
+
+// If checked, one or more of these conditionals take effect & added to characters
+submit.addEventListener("click", function conditionals() {
+  var characters = '';
+  (lowercaseIs.checked) ? characters += lowercase : '';
+  (uppercaseIs.checked) ? characters += uppercase : '';
+  (numberIs.checked) ? characters += numbers : '';
+  (symbolIs.checked) ? characters += symbols : '';
+  newPassword.value = ramdonPassword(passwordLength, characters)
+});
 
 // Declare the modal
 var modal = document.getElementById("myModal");
