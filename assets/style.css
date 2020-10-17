@@ -130,7 +130,7 @@ header {
 /* Slider added from w3schools */
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 60%;
   height: 15px;
   border-radius: 5px;  
   background: #d3d3d3;
