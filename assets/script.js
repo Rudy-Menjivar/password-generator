@@ -1,8 +1,14 @@
 // Declared the required variables
-var lowercase="abcdefghijklmnopqrstuvwxyz";
-var uppercase="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numbers="01234567890123456789";
-var symbols="!#$%&'()*+,-./:;<=>?@[]\^_`{|}~";
+var lowercase = "abcdefghijklmnopqrstuvwxyz";
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numbers = "01234567890123456789";
+var symbols = "!#$%&'()*+,-./:;<=>?@[]\^_`{|}~";
+
+var lowercaseIs = document.getElementById('lowercase');
+var uppercaseIs = document.getElementById('uppercase');
+var numberIs = document.getElementById('numbers');
+var symbolIs = document.getElementById('symbols');
+var passwordLength = document.getElementById('passwordLength');
 
 // Assignment Code for button
 var generateBtn = document.querySelector("#generate");
