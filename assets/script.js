@@ -37,6 +37,11 @@ var slider = document.getElementById("passwordLength");
 var output = document.getElementById("lengthValue");
 output.innerHTML = slider.value; // Display the default slider value
 
+// Update the slider value as it's moved
+slider.oninput = function() {
+  output.innerHTML = this.value;
+} 
+
 // Add event listener to generate button, then writePassword
 generateBtn.addEventListener("click", writePassword);
 
