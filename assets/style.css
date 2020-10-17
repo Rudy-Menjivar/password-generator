@@ -114,7 +114,7 @@ header {
 
 .close:hover,
 .close:focus {
-  color: rgb(175, 2, 2)143, 27, 27);
+  color: rgb(175, 2, 2);
   text-decoration: none;
   cursor: pointer;
 }
