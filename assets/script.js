@@ -1,8 +1,8 @@
 // Declared the required variables
-var lowerCase="abcdefghijklmnopqrstuvwxyz";
-var upperCase="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var num="01234567890123456789";
-var sym="!#$%&'()*+,-./:;<=>?@[]\^_`{|}~";
+var lowercase="abcdefghijklmnopqrstuvwxyz";
+var uppercase="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numbers="01234567890123456789";
+var symbols="!#$%&'()*+,-./:;<=>?@[]\^_`{|}~";
 
 // Assignment Code for button
 var generateBtn = document.querySelector("#generate");
