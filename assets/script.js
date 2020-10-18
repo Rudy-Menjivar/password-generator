@@ -11,6 +11,7 @@ var numberIs = document.getElementById('numbers');
 var symbolIs = document.getElementById('symbols');
 var passwordLength = document.getElementById('passwordLength');
 var submit = document.getElementById('genPass')
+var newPassword = document.getElementById('password')
 
 // Assignment Code for button
 var generateBtn = document.querySelector("#genPass");
