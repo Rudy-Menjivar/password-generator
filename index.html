@@ -12,16 +12,17 @@
       <header>
         <h1>Password Generator</h1>
       </header>
-      <div class="card">
+      <section class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
         <div onclick="copyOnClick()" class="card-body">
           <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
-        </div>
-        <footer class="card-footer">
+        </div>    
+        <div class="card-footer">
         <button id="myBtn" class="btn">Generator Password</button>
-        </footer>
+        </div>
+      </section>
         <!-- Modal -->
         <div id="myModal" class="modal">
           <div class="modal-content">
@@ -52,9 +53,8 @@
             </div>
           </div>  
         </div>
-        <!-- End of Modal -->
-      </div>
-  </main>
+        <!-- End of Modal -->   
+    </main>
   <script src="assets/script.js"></script>
  </body>
 </html>
