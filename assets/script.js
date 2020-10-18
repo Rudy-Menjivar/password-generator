@@ -10,28 +10,27 @@ var uppercaseIs = document.getElementById('uppercase');
 var numberIs = document.getElementById('numbers');
 var symbolIs = document.getElementById('symbols');
 var passwordLength = document.getElementById('passwordLength');
-var submit = document.getElementById('genPass')
-var newPassword = document.getElementById('password')
+var submit = document.getElementById('genPass');
+var newPassword = document.getElementById('password');
 
-// Assignment Code for button
-var generateBtn = document.querySelector("#genPass");
 
 // If checked, one or more of these conditionals take effect & added to characters
-submit.addEventListener("click", function conditionals() {
+submit.addEventListener("click", function conditionals(){
   var characters = '';
   (lowercaseIs.checked) ? characters += lowercase : '';
   (uppercaseIs.checked) ? characters += uppercase : '';
   (numberIs.checked) ? characters += numbers : '';
   (symbolIs.checked) ? characters += symbols : '';
-  newPassword.value = ramdonPassword(passwordLength, characters)
+  newPassword.value = ramdonPassword(passwordLength.value, characters)
 });
 
 // Password gets randomly generated and is based on selected length
-function ramdonPassword(length,characters) {
+function ramdonPassword(length,characters){
   var password = '';
   for(var i =0; i < length; i++){
     password += characters.charAt(Math.floor(Math.random() * characters.length));
   }
+  return password
 }
 
 // Declare the modal
@@ -68,21 +67,3 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
-
-// Variable linked with final button id
-var genPass = document.getElementById('genPass');
-
-// Add event listener to generate button, then writePassword
-generateBtn.addEventListener("click", writePassword);
-
-// Text alert
-// function writePassword() {
-//     var txt;
-//     var person = prompt("Please enter your name:", "");
-//     if (person == null || person == "") {
-//       txt = "User cancelled the prompt.";
-//     } else {
-//       txt = "Hello " + person + "! How are you today?";
-//     }
-//     document.getElementById("password").innerHTML = txt;
-// }
