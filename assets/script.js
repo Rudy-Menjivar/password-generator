@@ -26,6 +26,14 @@ submit.addEventListener("click", function conditionals() {
   newPassword.value = ramdonPassword(passwordLength, characters)
 });
 
+// Password gets randomly generated and is based on selected length
+function ramdonPassword(length,characters) {
+  var password = '';
+  for(var i =0; i < length; i++){
+    password += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+}
+
 // Declare the modal
 var modal = document.getElementById("myModal");
 
