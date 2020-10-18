@@ -33,6 +33,15 @@ function ramdonPassword(length,characters){
   return password
 }
 
+// Added copy on click onto password DOM
+function copyOnClick(){
+  var copyText =document.getElementById("password");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Password copied: " + copyText.value);
+}
+
 // Declare the modal
 var modal = document.getElementById("myModal");
 
