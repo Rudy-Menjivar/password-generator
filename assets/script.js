@@ -10,6 +10,7 @@ var uppercaseIs = document.getElementById('uppercase');
 var numberIs = document.getElementById('numbers');
 var symbolIs = document.getElementById('symbols');
 var passwordLength = document.getElementById('passwordLength');
+var submit = document.getElementById('genPass')
 
 // Assignment Code for button
 var generateBtn = document.querySelector("#genPass");
@@ -23,15 +24,6 @@ submit.addEventListener("click", function conditionals() {
   (symbolIs.checked) ? characters += symbols : '';
   newPassword.value = ramdonPassword(passwordLength, characters)
 });
-
-// Password gets randomly generated and is based on selected length
-function randomPassword(length,characters){
-  var password = '';
-  for(var i = 0; i < length; i++){
-    password += characters.charAt(Math.floor(Math.random() * characters.length));
-  }
-  return password;
-}
 
 // Declare the modal
 var modal = document.getElementById("myModal");
