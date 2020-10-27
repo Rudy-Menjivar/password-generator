@@ -3,7 +3,6 @@ The goal is to create a random password generator that features dynamically upda
 
 ## Requirements
 
-```
 1. WHEN the button to generate a password is selected
 - THEN a series of prompts will come up for password criteria
 2. WHEN prompted for password criteria
@@ -18,7 +17,6 @@ The goal is to create a random password generator that features dynamically upda
 - THEN a password is generated that matches the selected criteria
 7. WHEN the password is generated
 - THEN the password is either displayed in an alert or written to the page
-```
 
 ## Mock-Up
 
