@@ -23,3 +23,10 @@ The goal is to create a random password generator that features dynamically upda
 The following image shows the web application's appearance and functionality:
 
 ![password generator demo](./assets/pwd-template-demo.png)
+
+## GitHub IO
+
+This password generator is accessible via GitHub Pages. Feel free to download the files for your review.
+
+- [GitHub Page](https://rudy-menjivar.github.io/password-generator/)
+- [GitHub Repository](https://github.com/Rudy-Menjivar/password-generator)
